@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACR Assessment Tool</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="Assessment-row">
+        <div class="Assessment-left">
+            <h3 style="margin-top: 0;">Menu</h3>
+            <input type="text" id="AssessmentSearch" onkeyup="Filter_Menu()" placeholder="Search..">
+            <ul id="AssessmentMenu">
+                <li><a href="#" onclick="Display_Content(event, 'General_ACR')">General</a></li>
+                <li><a href="#" onclick="Display_Content(event, 'Trauma_ACR')">Trauma</a></li>
+                <li><a href="#" onclick="Display_Content(event, 'Respiratory_ACR')">Respiratory</a></li>
+                <li><a href="#" onclick="Display_Content(event, 'Cardiac_ACR')">Cardiac</a></li>
+                <li><a href="#" onclick="Display_Content(event, 'Refusal_ACR')">Refusal</a></li>
+            </ul>
+        </div>
+
+        <div class="Assessment-right" id="AssessmentContentArea">
+            <div id="General_ACR" class="content-panel active">
+                <h3>General Appearance</h3>
+                <p>Assess the patient's age, sex, apparent distress, skin color, and overall appearance.</p>
+                <p>Document responsiveness, posture, and any obvious signs of distress or illness.</p>
+            </div>
+
+            <div id="Trauma_ACR" class="content-panel">
+                <h3>Trauma</h3>
+                <p>Evaluate for mechanism of injury, areas of pain, deformity, and signs of bleeding.</p>
+                <p>Check for spinal tenderness, instability, and any life-threatening hemorrhage.</p>
+            </div>
+
+            <div id="Respiratory_ACR" class="content-panel">
+                <h3>Respiratory</h3>
+                <p>Assess respiratory rate, rhythm, depth, work of breathing, and breath sounds.</p>
+                <p>Check oxygenation, airway patency, and use of accessory muscles.</p>
+            </div>
+
+            <div id="Cardiac_ACR" class="content-panel">
+                <h3>Cardiac</h3>
+                <p>Evaluate pulse rate and quality, skin perfusion, capillary refill, and blood pressure.</p>
+                <p>Look for chest pain, dysrhythmia, hypotension, and signs of shock.</p>
+            </div>
+
+            <div id="Refusal_ACR" class="content-panel">
+                <h3>Refusal</h3>
+                <p>Confirm the patient is alert and oriented, understands the risks, and is refusing care voluntarily.</p>
+                <p>Document mental status, capacity, alternatives offered, and refusal against medical advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts.js"></script>
+</body>
+</html>

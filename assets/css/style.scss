@@ -111,6 +111,12 @@
     background-color: #4CAF50;
     color: white;
 }
+.content-panel {
+    display: none;
+}
+.content-panel.active {
+    display: block;
+}
 #AssessmentSearch {
     width: 100%;
     font-size: 14px;
